@@ -22,8 +22,8 @@ MASK_LOGITS = True
 N_HEADS = 8
 """TRAIN"""
 LR = 1e-5
-GRAPH_SIZE = 25
-BATCH_SIZE = 200
+GRAPH_SIZE = 100  # 每张图多少个点
+BATCH_SIZE = 200  # 每批次训练多少张图
 VAL_SIZE = 10
 _cuda_available = torch.cuda.is_available()
 DEVICE = torch.device("cuda:0" if _cuda_available else "cpu")
